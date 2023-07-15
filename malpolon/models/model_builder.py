@@ -123,6 +123,7 @@ def change_last_layer_modifier(
     model: nn.Module,
     num_outputs: int,
     flatten: bool = False,
+    softmax: bool = False,
 ) -> nn.Module:
     """
     Removes the last registered linear layer of a model and replaces it by a new dense layer with the provided number of outputs.
@@ -151,6 +152,12 @@ def change_last_layer_modifier(
         new_layer = nn.Sequential(
             new_layer,
             nn.Flatten(0, -1),
+        )
+
+    if softmax:
+        new_layer = nn.Sequential(
+            new_layer,
+            nn.Softmax(dim=1),
         )
 
     setattr(submodule, layer_name, new_layer)

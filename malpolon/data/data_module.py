@@ -14,6 +14,7 @@ if TYPE_CHECKING:
 class BaseDataModule(pl.LightningDataModule, ABC):
     def __init__(
         self,
+        pin_memory: bool,
         train_batch_size: int = 32,
         inference_batch_size: int = 256,
         num_workers: int = 8,
@@ -25,7 +26,7 @@ class BaseDataModule(pl.LightningDataModule, ABC):
         self.num_workers = num_workers
 
         # TODO check if uses GPU or not before using pin memory
-        self.pin_memory = True
+        self.pin_memory = pin_memory
 
     @property
     @abstractmethod
