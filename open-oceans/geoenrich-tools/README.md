@@ -15,7 +15,7 @@ List of files:
 GeoEnrich stores environmental data into large NetCDF files. We need to export those into individual files (one per occurrence) containing all environmental layers.
 We also split the training dataset and add additional information on the ocean basin.
 
-### Enrich data with geoenrich (separate documentation)
+### Enrich data with geoenrich ([separate documentation](https://geoenrich.readthedocs.io))
 
 ### Merge and split the dataset
 
