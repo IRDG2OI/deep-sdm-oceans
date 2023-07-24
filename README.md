@@ -1,61 +1,15 @@
-# Malpolon
+# Deep-SDMs in the open oceans
 
-Malpolon is a framework facilitating the training of Deep Species Distribution models using various types of input covariates including biodclimatic rasters, remote sensing images, land-use rasters, etc. 
+This is the code used to train the model, and prepare the outputs for the preprint named **Predicting species distributions in the open oceans with convolutional neural networks**, available on .
 
-## Installation
+This code uses the Malpolon framework, created and maintained by the Pl@ntNet team at INRIA.
+See the [original repository](https://github.com/plantnet/malpolon) for installation instructions and documentation.
 
-Currently, only the development version is available.
-First make sure that the dependences listed in the `requirements.txt` file are installed.
 
-One way to do so is to use `conda`
-
-```script
-conda env create -n <name> -f environment.yml
-conda activate <name>
-```
-
-`malpolon` can then be installed via `pip` using
-
-```script
-git clone https://github.com/plantnet/malpolon.git
-cd malpolon
-pip install -e .
-```
-
-To check that the installation went well, use the following command
-
-```script
-python -m malpolon.check_install
-```
-
-which, if you have CUDA properly installed, should output something similar to
-
-```script
-Using PyTorch version 1.13.0
-CUDA available: True (version: 11.6)
-cuDNN available: True (version: 8302)
-Number of CUDA-compatible devices found: 1
-```
+## Directory structure
 
 
 
-## Examples
-
-Examples using the GeoLifeCLEF 2022 dataset is provided in the `examples` folder.
+## Data links
 
 
-## Documentation
-
-To generate the documention, additional dependences contained in `docs/docs_requirements.txt` must be installed using
-
-```script
-pip install -r docs/docs_requirements.txt
-```
-
-The documentation can then be generated using
-
-```script
-make -C docs html
-```
-
-The result can be found in `docs/_build/html`.
