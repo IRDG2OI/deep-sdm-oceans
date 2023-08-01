@@ -14,5 +14,22 @@ If you want to retrain from a checkpoint, set other.train_from_checkpoint to *tr
 
 ## Generating outputs
 
-Either use your own checkpoint and config file, or the [provided ones](https://doi.org/10.5281/zenodo.8202914)
+Either use your own checkpoint and config file, or the provided ones (cf. checkpoint link in the next section).
+
 Then you can make predictions and generate output maps using the [Generate_outputs](Generate_outputs.ipynb) notebook.
+
+## Data links
+
+### Input data
+
+[Numpy input data + csv database](https://doi.org/10.5281/zenodo.8188512)
+
+### Model checkpoint
+
+[Model checkpoint & config file](https://doi.org/10.5281/zenodo.8202914)
+
+### Outputs
+
+- [Global 2021 distribution maps](https://doi.org/10.5281/zenodo.8202261)
+- [Western Indian Ocean 2021 distribution maps](https://doi.org/10.5281/zenodo.8202056)
+- [+2°C projection](https://doi.org/10.5281/zenodo.8202709)
