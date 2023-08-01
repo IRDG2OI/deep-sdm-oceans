@@ -19,7 +19,7 @@ All code that is specific to our use case is in the *open-oceans* folder.
 
 ### Model checkpoint
 
-Model checkpoint & config file
+[Model checkpoint & config file](https://doi.org/10.5281/zenodo.8202914)
 
 ### Outputs
 

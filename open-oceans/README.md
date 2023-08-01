@@ -14,4 +14,5 @@ If you want to retrain from a checkpoint, set other.train_from_checkpoint to *tr
 
 ## Generating outputs
 
+Either use your own checkpoint and config file, or the [provided ones](https://doi.org/10.5281/zenodo.8202914)
 Then you can make predictions and generate output maps using the [Generate_outputs](Generate_outputs.ipynb) notebook.
