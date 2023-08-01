@@ -1,6 +1,6 @@
 # Deep-SDMs in the open oceans
 
-This is the code used to train the model, and prepare the outputs for the preprint named **Predicting species distributions in the open oceans with convolutional neural networks**, available on .
+This is the code used to train the model, and prepare the outputs for the preprint named **Predicting species distributions in the open oceans with convolutional neural networks**, available on (Link will be added shortly).
 
 This code uses the Malpolon framework, created and maintained by the Pl@ntNet team at INRIA.
 See the [original repository](https://github.com/plantnet/malpolon) for installation instructions and documentation.
@@ -15,7 +15,7 @@ All code that is specific to our use case is in the *open-oceans* folder.
 
 ### Input data
 
-Numpy input data + csv database
+[Numpy input data + csv database](https://doi.org/10.5281/zenodo.8188512)
 
 ### Model checkpoint
 
@@ -23,9 +23,6 @@ Model checkpoint & config file
 
 ### Outputs
 
-Raw predictions files (CSV)
-
-- Global 2021 distribution maps: PNG, GeoTIFF
-- Western Indian Ocean 2021 distribution maps: GIF, GeoTIFF
-- +2°C projection: PNG, GeoTIFF
-
+- [Global 2021 distribution maps](https://doi.org/10.5281/zenodo.8202261)
+- [Western Indian Ocean 2021 distribution maps](https://doi.org/10.5281/zenodo.8202056)
+- [+2°C projection](https://doi.org/10.5281/zenodo.8202709)
