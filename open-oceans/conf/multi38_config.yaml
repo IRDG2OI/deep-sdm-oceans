@@ -1,0 +1,47 @@
+hydra:
+  run:
+    dir: /home/gaetan/multi38/outputs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: true
+
+trainer:
+  accelerator: "gpu"
+  max_epochs: 10
+  val_check_interval: 0.1
+  gradient_clip_val: 0.2
+
+model:
+  provider_name: "torchvision"
+  model_name: "resnet50"
+  model_kwargs:
+    weights: null
+   # dropout: 0.3
+  modifiers:
+    change_last_layer:
+      num_outputs: 38
+      flatten: false
+      softmax: true
+    change_first_convolutional_layer:
+      num_input_channels: 29
+
+optimizer:
+  lr: 1e-2
+  weight_decay: 1e-4
+  momentum: 0.9
+  nesterov: true
+  loss_weights: [9998, 9991, 8908, 2022, 9999, 9986, 4855, 9996, 705, 2767, 9996, 9992, 2446, 2160, 9991, 9998, 9993, 10000, 6240, 9973, 1064, 7928, 9974, 9980, 9996, 9973, 9952, 7394, 9974, 9984, 9937, 9963, 9835, 9941, 9721, 9981, 9964, 8676]
+
+data:
+  dataset_path: "/home/gaetan/multi38/data"
+  dataset_name: "datasets/all_v2_oceans+h_clean.csv"
+  train_batch_size: 256
+  inference_batch_size: 32
+  num_workers: 16
+  ignore_indices: [11, 21, 22, 23, 24]
+  pin_memory: true
+
+other:
+  train_from_checkpoint: false
+  ckpt_path: "/home/gaetan/multi38/outputs/multi38/"
+  ckpt_name: "2023-07-24_07-49-49/checkpoint-epoch=08--val_f1=0.6036.ckpt"
+  comment: "Removed time lag and without eke for interpretation study - continue training"
