@@ -1,6 +1,6 @@
 # Geoenrich tools
 
-These are snippets of code used after downloading environmental data with geoenrich.
+These are snippets of code used after downloading environmental data with GeoEnrich.
 Their aim is to prepare and export the data for the deep learning training / predictions.
 
 List of files:
@@ -37,4 +37,4 @@ The *collate_npy_multi38.py* script handles parallelized collation with mpiexec.
 Now data is ready to be transfered to your Deep Learning computer/server.
 You have to transfer all the individual numpy files as well as the csv dataset.
 
-Then you can use the *Data preparation* python notebook.
+Then you can use the *Prepare data* python notebook.
