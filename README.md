@@ -14,5 +14,8 @@ All code that is specific to our use case is in the [open-oceans](open-oceans) f
 
 ## Citing
 
-If you use this work please cite the preprint (citation information will be added shortly).
-This article is undergoing peer-review and a reference to the final version will be added here when it is over.
+If you use this work please cite the preprint:
+
+> Morand, G., Joly, A., Rouyer, T., Lorieul, T., &amp; Barde, J. (2023). Predicting species distributions in the open oceans with Convolutional Neural Networks (preprint). BioRxiv. https://doi.org/10.1101/2023.08.11.551418 
+
+This article is undergoing peer-review and a reference to the final version will be added here when it is ready.
