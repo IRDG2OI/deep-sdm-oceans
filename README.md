@@ -1,3 +1,13 @@
+# ACKNOWLEDGEMENT
+
+This project is being developed as part of the G2OI project, cofinanced by the European Union, the Reunion region, and the French Republic.
+<div align="center">
+
+
+<img src="https://github.com/IRDG2OI/geoflow-g2oi/blob/main/img/logos_partenaires.png?raw=True" height="80px">
+
+</div>
+
 # Deep-SDMs in the open oceans
 
 This is the code used to train the model, and prepare the outputs for the preprint named **Predicting species distributions in the open oceans with convolutional neural networks**, available on [bioRxiv](https://doi.org/10.1101/2023.08.11.551418
