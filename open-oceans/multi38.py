@@ -131,6 +131,11 @@ class Multi38Dataset(Dataset):
             patch25[...,i] = 0   
 
 
+        # # Uncomment for DNN training
+        # center_values = 0.25 * (patch25[15,15,:] + patch25[15,16,:] + patch25[16,15,:] + patch25[16,16,:])
+        # patch25[:,:] = center_values
+        # # End of DNN Training
+        
         # # Test with summary values
         # av, std = np.average(patch25, (0,1)), np.std(patch25, (0,1))
         # mi, ma = np.min(patch25, (0,1)), np.max(patch25, (0,1))
